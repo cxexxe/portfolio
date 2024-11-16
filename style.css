@@ -64,6 +64,7 @@ a{
     outline: none;
 }   
 
+
 .cursor {
     width: 1.04vw;
     height: 1.04vw;
@@ -252,7 +253,7 @@ a{
     position: absolute;
     left: 0;
     right: 0;
-    top: 42%; 
+    top: 45%; 
     width: 100%;
     z-index: 1;
     transform: translateY(-50%);

@@ -526,8 +526,8 @@
     position: absolute;
 }
 .btn_parallax {
-    width: 6.25vw;
-    height: 6.25vw;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     background-color: #fff;
     display: flex;
@@ -536,8 +536,9 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    position: absolute;
+    position: fixed; /* absolute에서 fixed로 변경 */
     transform: translate(-50%, -50%);
+    z-index: 100; /* 높은 z-index 설정 */
 }
 
 .btn_text {

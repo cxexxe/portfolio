@@ -1804,52 +1804,57 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     </script>
+    <!-- parallax btn -->
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const marquee = document.querySelector('.contacts_ticker .marquee_wrap');
-    const btnParallax = document.querySelector('.contacts_ticker .btn_parallax');
-    let isHovered = false;
-    let currentX = 0;
-    let currentY = 0;
-    let targetX = 0;
-    let targetY = 0;
-
-    // 마키 영역에 마우스 진입 시
-    marquee.addEventListener('mouseenter', () => {
-        isHovered = true;
-        btnParallax.style.opacity = '1';
-    });
-
-    // 마키 영역에서 마우스 이탈 시
-    marquee.addEventListener('mouseleave', () => {
-        isHovered = false;
-        btnParallax.style.opacity = '0';
-    });
-
-    // 마키 영역 내에서 마우스 이동 시
-    marquee.addEventListener('mousemove', (e) => {
-        if (isHovered) {
-            // 마우스 위치를 마키 기준으로 계산
-            const rect = marquee.getBoundingClientRect();
-            targetX = e.clientX - rect.left;
-            targetY = e.clientY - rect.top;
-        }
-    });
-
-    // 부드러운 움직임을 위한 애니메이션
-    function animate() {
-        if (isHovered) {
-            currentX += (targetX - currentX) * 0.1;
-            currentY += (targetY - currentY) * 0.1;
+        document.addEventListener('DOMContentLoaded', function() {
+            const marquee = document.querySelector('.contacts_ticker .marquee_wrap');
+            const btnParallax = document.querySelector('.contacts_ticker .btn_parallax');
             
-            btnParallax.style.left = currentX + 'px';
-            btnParallax.style.top = currentY + 'px';
-        }
-        requestAnimationFrame(animate);
-    }
+            // 커스텀 커서 요소 생성
+            const cursor = document.createElement('div');
+            cursor.classList.add('custom-cursor');
+            document.body.appendChild(cursor);
+            
+            let isHovered = false;
+            let currentX = 0;
+            let currentY = 0;
+            let targetX = 0;
+            let targetY = 0;
 
-    animate();
-});
+            // 마우스 이동 시 커서 위치 업데이트
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                
+                if (isHovered) {
+                    targetX = e.clientX;
+                    targetY = e.clientY;
+                }
+            });
+
+            marquee.addEventListener('mouseenter', () => {
+                isHovered = true;
+                btnParallax.style.opacity = '1';
+            });
+
+            marquee.addEventListener('mouseleave', () => {
+                isHovered = false;
+                btnParallax.style.opacity = '0';
+            });
+
+            function animate() {
+                if (isHovered) {
+                    currentX += (targetX - currentX) * 0.1;
+                    currentY += (targetY - currentY) * 0.1;
+                    
+                    btnParallax.style.left = currentX + 'px';
+                    btnParallax.style.top = currentY + 'px';
+                }
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        });
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
