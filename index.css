@@ -413,8 +413,19 @@
     align-items: flex-start;
     flex-direction: row-reverse;
     width: calc(100% + 37.5vw);
+    margin-left: -25vw;  /* -360px */
+    margin-bottom: -15vw; 
+    position: relative;
+}
+.list_row:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    width: calc(100% + 37.5vw);
     margin-left: -18.75vw;  /* -360px */
-    margin-bottom: -5.208vw; 
+    margin-bottom: -15vw; 
+    position: relative;
 }
 
 .list_row:nth-child(even) {

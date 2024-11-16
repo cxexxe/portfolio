@@ -14,8 +14,6 @@
     <script src="https://kit.fontawesome.com/83ff0e0a6f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>portfolio</title>
 </head>
 <body>
@@ -729,7 +727,28 @@
 
                     <div class="cases_list" translate: none; rotate: none; scale: none; transform: translate(0px, 0px);>
                         <div class="list_row">
-                            <div class="list_con right-top" data-overlay="overlay5">
+                            <div class="list_con right-top" data-overlay="overlay6">
+                                <div class="thumbnail">
+                                    <div class="thumbnail_img">
+                                        <div class="thumbnail_img_inner">
+                                            <img src="images/봉공.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="card_title">
+                                    <span class="title_line"></span>
+                                    <span>경기도 브랜드 홍보 공모전 - 경기일주 러닝키트</span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #43040d;"></i>
+                                </h5>
+                            <div class="card_tags">
+                                <a href="">
+                                    <span>Goods design</span>
+                                </a>
+                                <a href="">
+                                    <span>Package design</span>
+                                </a>
+                            </div>
+                            </div>
+                            <div class="list_con left-bottom" data-overlay="overlay5">
                                     <div class="thumbnail">
                                         <div class="thumbnail_img">
                                             <div class="thumbnail_img_inner">
@@ -741,65 +760,21 @@
                                         <span class="title_line"></span>
                                         <span>경기도청소년활동진흥센터 BI</span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #43040d;"></i>
                                     </h5>
-                                <div class="card_tags">
-                                    <a href="">
-                                        <span>Design research</span>
-                                    </a>
-                                    <a href="">
-                                        <span>BI</span>
-                                    </a>
-                                    <a href="">
-                                        <span>CI</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="list_con left-bottom" data-overlay="overlay6">
-                                    <div class="thumbnail">
-                                        <div class="thumbnail_img">
-                                            <div class="thumbnail_img_inner">
-                                                <img src="images/봉공.png" alt="">
-                                            </div>
-                                        </div>
+                                    <div class="card_tags">
+                                        <a href="">
+                                            <span>Design research</span>
+                                        </a>
+                                        <a href="">
+                                            <span>BI</span>
+                                        </a>
+                                        <a href="">
+                                            <span>CI</span>
+                                        </a>
                                     </div>
-                                    <h5 class="card_title">
-                                        <span class="title_line"></span>
-                                        <span>경기도 브랜드 홍보 공모전 - 경기일주 러닝키트</span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #43040d;"></i>
-                                    </h5>
-                                <div class="card_tags">
-                                    <a href="">
-                                        <span>Goods design</span>
-                                    </a>
-                                    <a href="">
-                                        <span>Package design</span>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                         <div class="list_row">
-                            <div class="list_con right-top" data-overlay="overlay7">
-                                <a href="">
-                                    <div class="thumbnail">
-                                        <div class="thumbnail_img">
-                                            <div class="thumbnail_img_inner">
-                                                <img src="images/magazine.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h5 class="card_title">
-                                        <span class="title_line"></span>
-                                        <span>월간미술 잡지</span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #43040d;"></i>
-                                    </h5>
-                                </a>
-                                <div class="card_tags">
-                                    <a href="">
-                                        <span>Editorial design</span>
-                                    </a>
-                                    <a href="">
-                                        <span>Book design</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="list_con left-bottom" data-overlay="overlay8">
+                            <div class="list_con right-top" data-overlay="overlay8">
                                 <a href="">
                                     <div class="thumbnail">
                                         <div class="thumbnail_img">
@@ -822,6 +797,30 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="list_con left-bottom" data-overlay="overlay7">
+                                <a href="">
+                                    <div class="thumbnail">
+                                        <div class="thumbnail_img">
+                                            <div class="thumbnail_img_inner">
+                                                <img src="images/magazine.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="card_title">
+                                        <span class="title_line"></span>
+                                        <span>월간미술 잡지</span><i class="fa-solid fa-arrow-up-right-from-square" style="color: #43040d;"></i>
+                                    </h5>
+                                </a>
+                                <div class="card_tags">
+                                    <a href="">
+                                        <span>Editorial design</span>
+                                    </a>
+                                    <a href="">
+                                        <span>Book design</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
                         </div>
                         <!-- <div class="list_footer">
                             <h3 class="footer_title">
@@ -1707,15 +1706,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 const progress = self.progress;
                 let xPercent;
 
-                if (progress < 0.25) {
-                    xPercent = gsap.utils.interpolate(-11.5, 30, progress / 0.25);
-                } else if (progress < 0.5) {
-                    xPercent = gsap.utils.interpolate(30, -11.5, (progress - 0.25) / 0.25);
-                } else if (progress < 0.75) {
-                    xPercent = gsap.utils.interpolate(-11.5, 30, (progress - 0.5) / 0.25);
-                } else {
-                    xPercent = gsap.utils.interpolate(30, 0, (progress - 0.75) / 0.25);
-                }
+                if (progress < 0.16) { // 0~16%
+                xPercent = gsap.utils.interpolate(0, 20, progress / 0.16);
+            } else if (progress < 0.33) { // 16~33%
+                xPercent = gsap.utils.interpolate(20, 45, (progress - 0.16) / 0.17);
+            } else if (progress < 0.5) { // 33~50%
+                xPercent = gsap.utils.interpolate(45, 20, (progress - 0.33) / 0.17);
+            } else if (progress < 0.66) { // 50~66%
+                xPercent = gsap.utils.interpolate(20, -15, (progress - 0.5) / 0.16);
+            } else if (progress < 0.93) { // 66~93%
+                xPercent = gsap.utils.interpolate(-15, 30, (progress - 0.66) / 0.27);
+            } else if (progress < 0.97) { // 93~97%
+                xPercent = gsap.utils.interpolate(30, 15, (progress - 0.93) / 0.04);
+            } else { // 97~100%
+                xPercent = gsap.utils.interpolate(15, 15, (progress - 0.97) / 0.03);
+            }
 
                 gsap.set(casesList, { xPercent: xPercent, ease: "power1.inOut" });
             }
@@ -1798,9 +1803,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    </script>
-    <script>
-        AOS.init();
     </script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
