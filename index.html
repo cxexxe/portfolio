@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Document</title>
+    <title>portfolio</title>
 </head>
 <body>
     <div class="cursor"><!-- <img src="images/cursor.png" alt="cursor"> --></div>
@@ -41,7 +41,7 @@
             <div class="inner">
 
                 <div class="copy">
-                    <h1 data-aos="fade-up">I CREATE <br> <span data-aos="fade-up" data-aos-duration="3000">DESIGN MAGIC</span> </h1>
+                    <h1><span class="first-text">I CREATE</span> <br> <span class="second-text">DESIGN MAGIC</span></h1>
                 </div>
 
                 <div class="main_btn">
@@ -55,22 +55,20 @@
                     </div>
                 </div>
             </div>
-                <div class="container">
-                    <div class="marquee_wrap">
-                        <div class="marqueeOne">
-                            <span class="spinningStar">&#10033;</span>Welcome to my protfolio
-                            
-                        </div>
+            <div class="container">
+                <div class="marquee_wrap">
+                    <div class="marqueeOne">
+                        <span class="spinningStar">&#10033;</span>Welcome to my protfolio
                     </div>
-                
-                    <div class="main_img">
-                        <img src="images/불_이펙트_2.gif" alt="">
-                    </div>
-                    <div class="mobile_img">
-                        <img src="images/불_이펙트_2.gif" alt="">
-                    </div>
-
                 </div>
+            
+                <div class="main_img">
+                    <img src="images/불_이펙트_2.gif" alt="">
+                </div>
+                <div class="mobile_img">
+                    <img src="images/불_이펙트_2.gif" alt="">
+                </div>
+            </div>
         </section>
 
         <section class="about">
@@ -305,19 +303,18 @@
                                 <div class="scrollBox">
                                 <div class="overview">
                                     <span>OVERVIEW</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur quo atque voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi. <br>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non voluptas harum deserunt, temporibus nemo laborum neque ipsum minus quod porro sint accusamus fugiat totam fugit animi, eaque quae vitae facilis!</p>
+                                    <p>쌩쌩몰 웹사이트의 정기배송 서비스는 이용 횟수에 따라 다양한 혜택을 제공하지만, 사용자가 페이지를 여러 번 이동하며 긴 설명을 읽어야 하는 번거로움이 있었습니다. 이러한 불편함은 높은 이탈률로 이어졌습니다. 이를 개선하고자 구매창에서 정기배송 옵션을 바로 선택할 수 있도록 프로세스를 단순화하여 사용자 경험을 향상시켰습니다.</p>
                                 </div>
                                 <div class="contribution">
                                     <span>MY CONTRIBUTION</span>
                                     <div class="txtBox">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                                        <p>사용자 리서치를 통해 타겟 고객을 재정의하고, 그들의 주요 페인 포인트를 파악했습니다.</p>
                                     </div>
                                     <div class="txtBox">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae pariatur quo atque,</p>
+                                        <p>이러한 인사이트를 바탕으로 정기배송 신청 기능을 구매창에 통합하여, 사용자가 더 쉽게 접근할 수 있도록 개선했습니다. 특히, 옵션 선택 화면을 직관적으로 재구성하고, 원클릭 신청이 가능하도록 기능을 최적화했습니다.</p>
                                     </div>
                                     <div class="txtBox">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. voluptatibus molestias accusamus odit, iure aspernatur tempore, corporis praesentium non exercitationem cum, nisi cupiditate laboriosam odio quas eligendi.</p>
+                                        <p>Figma를 활용해 인터랙티브 프로토타입을 제작한 후, 5명의 사용자를 대상으로 유저 테스트를 진행하여 디자인의 효과를 검증했습니다.</p>
                                     </div>
                                 </div>
                                 </div>
@@ -1332,10 +1329,10 @@
                         <p>Contact me in one click in the <br>
                             messenger that is convenient for you.</p>
                         <ul class="socials">
-                            <li class="list_item">
+                            <li class="list_item first">
                                 <a href=""><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
                             </li>
-                            <li class="list_item">
+                            <li class="list_item second">
                                 <a href=""><i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
                             </li>
                         </ul>
@@ -1493,7 +1490,7 @@
                 // 스크롤 속도 계산 (픽셀/밀리초)
                 const scrollSpeed = Math.abs(st - lastScrollTop) / timeDiff;
                 
-                // 스크롤 속도에 따른 타임스케일 계산 (최소 0.1, 최대 5)
+                // 스크롤 속도에 따른 타임스케일 계산 (최소 0.1, 대 5)
                 const timeScale = Math.min(Math.max(scrollSpeed * 50, 0.1), 5);
 
                 // 역향 지속 시간 계산 (최소 100ms, 최대 300ms)
@@ -1851,6 +1848,161 @@ document.addEventListener('DOMContentLoaded', () => {
 
     animate();
 });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 공통 애니메이션 설정
+            const commonEase = 'power2.out';
+            const commonDuration = 0.8;
+        
+            // 마키 애니메이션 생성 함수
+            function createMarqueeAnimation(selector) {
+                return gsap.to(selector, {
+                    xPercent: -100,
+                    repeat: -1,
+                    duration: 30,
+                    ease: "none",
+                    modifiers: {
+                        xPercent: gsap.utils.unitize(x => parseFloat(x) % 100)
+                    }
+                });
+            }
+        
+            // 1. Main Section
+            gsap.set([
+                '.first-text', '.second-text', 
+                '.pf, .arrow', '.am', 
+                '.intro p', '.marquee_wrap'
+            ], { opacity: 0, y: 50 });
+            gsap.set('.main_img, .mobile_img', { opacity: 0, scale: 0.8 });
+        
+            const mainTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.main',
+                    start: 'top center',
+                    end: 'bottom center',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+        
+            mainTl
+                .to('.main .first-text', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase })
+                .to('.main .second-text', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase }, '-=0.4')
+                .to('.main .pf, .arrow', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase, stagger: 0.1 }, '-=0.4')
+                .to('.main .am', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase }, '-=0.4')
+                .to('.main .intro p', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase }, '-=0.4')
+                .to('.main .marquee_wrap', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase }, '-=0.4')
+                .to('.main .main_img, .main .mobile_img', { opacity: 1, scale: 1, duration: 1, ease: commonEase }, '-=0.4');
+        
+            // 2. About Section
+            gsap.set(['.about .subject', '.about .img_box', '.about .marquee_wrap', '.about .advantages_content'], 
+                { opacity: 0, y: 50 });
+            gsap.set('.about .txt_box', { opacity: 0 });
+            gsap.set('.about hr', { opacity: 0, scaleX: 0 });
+        
+            const aboutTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.about',
+                    start: 'top center',
+                    end: 'bottom center',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+        
+            aboutTl
+                .to('.about .subject', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase })
+                .to('.about .txt_box', { opacity: 1, duration: commonDuration, ease: commonEase }, '-=0.4')
+                .to('.about .img_box', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase }, '-=0.4')
+                .to('.about hr', { opacity: 1, scaleX: 1, duration: commonDuration, ease: commonEase, transformOrigin: 'left center' }, '-=0.4')
+                .to(['.about .marquee_wrap', '.about .advantages_content'], { opacity: 1, y: 0, duration: commonDuration, ease: commonEase, stagger: 0 }, '-=0.4');
+        
+            const aboutMarquee = createMarqueeAnimation('.about .marqueeTwo');
+            aboutTl.add(() => aboutMarquee.play(), '-=0.4');
+        
+            // 3. Projects Up Section
+            gsap.set(['.up_con .subject', '.up_con .sub_intro', '.slide'], { opacity: 0, y: 50 });
+    gsap.set('.projects hr', { opacity: 0, scaleX: 0 }); // hr 선택자 수정
+
+    const projectsUpTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.up_con',
+            start: 'top center',
+            end: 'bottom center',
+            toggleActions: 'play none none reverse'
+        }
+    });
+
+            projectsUpTl
+                .to('.up_con .subject', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase })
+                .to('.up_con .sub_intro', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase }, '-=0.4')
+                .to('.projects hr', { // hr 선택자 수정
+                    opacity: 1, 
+                    scaleX: 1, 
+                    duration: commonDuration, 
+                    ease: commonEase, 
+                    transformOrigin: 'left center' 
+                }, '-=0.4')
+                .to('.slide', { 
+                    opacity: 1, 
+                    y: 0, 
+                    duration: 0.5, 
+                    stagger: { 
+                        each: 0.5, 
+                        ease: commonEase 
+                    } 
+                });
+        
+            // 4. Projects Down Section
+            gsap.set(['.down_con .subject', '.down_con .sub_intro'], { opacity: 0, y: 30 });
+            gsap.set('.projects .marquee_wrap', { opacity: 0, y: 50 }); // 선택자 수정
+            gsap.set('.list_con', { opacity: 0, scale: 0.8, transformOrigin: 'center center' });
+
+            const projectsDownTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.down_con',
+                    start: 'top center',
+                    end: 'bottom center',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+
+            projectsDownTl
+                .to('.down_con .subject', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase })
+                .to('.down_con .sub_intro', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase })
+                .to('.projects .marquee_wrap', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase }, '-=1') // 선택자 수정
+                .to('.list_con', { 
+                    opacity: 1, 
+                    scale: 1, 
+                    duration: commonDuration, 
+                    ease: commonEase,
+                    stagger: {
+                        amount: 1.2,
+                        from: "start"
+                    }
+                });
+
+            // 마키 애니메이션 생성 및 실행
+            const downMarquee = createMarqueeAnimation('.projects .marqueeTwo'); // 선택자 수정
+            projectsDownTl.add(() => {
+                downMarquee.play();
+            }, '-=0.4');
+        
+            // 5. Contacts Section
+            gsap.set(['.contacts .contacts_header', '.contacts .marquee_wrap'], { opacity: 0, y: 50 });
+        
+            const contactsTl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.contacts',
+                    start: 'top center',
+                    end: 'bottom center',
+                    toggleActions: 'play none none reverse'
+                }
+            });
+        
+            contactsTl
+                .to('.contacts .contacts_header', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase })
+                .to('.contacts .marquee_wrap', { opacity: 1, y: 0, duration: commonDuration, ease: commonEase }, '-=0.4');
+        });
     </script>
 </body>
 </html>

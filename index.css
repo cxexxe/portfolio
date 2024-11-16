@@ -30,19 +30,21 @@
     height: fit-content;
     padding: clamp(2rem, 6.25rem, 8rem) 18.75vw;
 }
-.main .inner .copy h1{
+.main .inner .copy{
+    line-height: 1.2;
+}
+.main .inner .copy .first-text{
     /* font-size: clamp(3rem, 11.25rem, 13rem); */
     font-size: 11vw;
     font-weight: 300;
     letter-spacing: -0.0625rem;
-    line-height: 1.2;
     white-space: nowrap;
 }
-.main .inner .copy h1 span{
+.main .inner .copy .second-text{
     /* font-size: clamp(3rem, 11.25rem, 13rem); */
     font-size: 10vw;
     font-weight: 500;
-    letter-spacing: -0.5rem;
+    letter-spacing: -0.8rem;
 }
 .main_btn {
     display: flex;
@@ -409,13 +411,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-direction: row;
-    margin-bottom: -5.208vw;  /* -100px */
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s ease;
-    width: calc(100% + 37.5vw); /* 720px */
+    flex-direction: row-reverse;
+    width: calc(100% + 37.5vw);
     margin-left: -18.75vw;  /* -360px */
+    margin-bottom: -5.208vw; 
 }
 
 .list_row:nth-child(even) {
@@ -427,13 +426,14 @@
 }
 
 .list_con.right-top {
-    align-self: flex-end;
-    margin-top: 23.438vw;  /* 450px */
+    align-self: flex-start;
+    margin-bottom: 23.438vw;  /* 450px */
+      /* 200px */
 }
 
 .list_con.left-bottom {
-    align-self: flex-start;
-    margin-top: 0;
+    align-self: flex-end;
+    
 }
 
 .list_footer{
